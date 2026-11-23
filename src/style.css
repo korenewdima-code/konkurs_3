@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-canvas-cream text-ink-dark font-body-md text-body-md antialiased;
+    overflow-x: hidden;
+    /* место под sticky-бар снизу */
+    padding-bottom: 72px;
+  }
+  @supports (overflow: clip) {
+    body { overflow-x: clip; }
+  }
+  /* У Prata одно начертание — запрещаем браузеру «жирнить» его искусственно */
+  .font-display-hero, .font-headline-xl, .font-headline-lg, .font-headline-md,
+  .font-headline-sm, .font-tag-editorial {
+    font-synthesis: none;
+    font-weight: 400;
+  }
+  ::selection { @apply bg-ruby text-white; }
+  :focus-visible { outline: 2px solid #B81D24; outline-offset: 2px; }
+}
+
+@layer components {
+  /* Контейнер: 1200px контента + отступы 48 / 32 / 20 */
+  .wrap {
+    @apply mx-auto w-full px-5 md:px-8 lg:px-12;
+    max-width: calc(1200px + 6rem);
+  }
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    width: 1em;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-ruby font-label-md text-label-md text-white shadow-cta transition-all hover:bg-ruby-dark active:scale-[0.98];
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full border border-metallic-border bg-surface-pure font-label-md text-label-md text-ink-dark transition-all hover:border-ruby hover:text-ruby;
+  }
+  .eyebrow {
+    @apply font-label-sm text-label-sm uppercase tracking-widest text-ruby;
+  }
+  .nowrap { white-space: nowrap; }
+}
+
+/* ---------- Галерея ---------- */
+.g-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+  touch-action: pan-y;
+}
+.g-track.is-dragging { transition: none; }
+.g-slide { flex: 0 0 100%; height: 100%; }
+.g-thumbs, .g-pills {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+}
+.g-thumbs::-webkit-scrollbar, .g-pills::-webkit-scrollbar { display: none; }
+.g-thumb[aria-current='true'] {
+  @apply border-ruby opacity-100;
+  box-shadow: 0 0 0 1px #B81D24;
+}
+.g-pill[aria-pressed='true'] { @apply bg-ruby text-white; }
+.g-dot[aria-current='true'] { @apply bg-white w-4; }
+
+/* Лайтбокс */
+.lb { display: none; }
+.lb.is-open { display: flex; }
+html.lb-lock, html.lb-lock body { overflow: hidden; }
+.lb-track { display: flex; height: 100%; transition: transform 0.35s ease; touch-action: pan-y; }
+.lb-track.is-dragging { transition: none; }
+.lb-slide { flex: 0 0 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+
+/* FAQ */
+details.faq > summary { list-style: none; }
+details.faq > summary::-webkit-details-marker { display: none; }
+details[open] .rot-open { transform: rotate(180deg); }
+
+/* Мобильное меню */
+.mnav { display: none; }
+.mnav.is-open { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .g-track, .lb-track { transition: none; }
+}
+
+/* Мягкое затухание у краёв прокручиваемых полос */
+.g-pills, .g-thumbs {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+.g-pills.at-end, .g-thumbs.at-end { -webkit-mask-image: none; mask-image: none; }

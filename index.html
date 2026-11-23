@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Раскатаем! Новогодний конкурс рецептов Едим Дома</title>
+    <meta
+      name="description"
+      content="Делитесь своими рецептами, собирайте лайки и выигрывайте машинки для пасты Marcato и форму Emile Henry. Приём до 25 декабря."
+    />
+    <meta name="theme-color" content="#FBF6EE" />
+    <link rel="canonical" href="https://konkurs-3.vercel.app/" />
+
+    <!-- Open Graph / шеринг -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Едим Дома" />
+    <meta property="og:title" content="Раскатаем! Новогодний конкурс рецептов Едим Дома" />
+    <meta
+      property="og:description"
+      content="Делитесь своими рецептами, собирайте лайки и выигрывайте машинки для пасты Marcato и форму Emile Henry. Приём до 25 декабря."
+    />
+    <meta property="og:url" content="https://konkurs-3.vercel.app/" />
+    <meta property="og:image" content="https://konkurs-3.vercel.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Раскатаем! Конкурс рецептов Едим Дома, Marcato и Emile Henry" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Раскатаем! Новогодний конкурс рецептов Едим Дома" />
+    <meta
+      name="twitter:description"
+      content="Делитесь своими рецептами, собирайте лайки и выигрывайте машинки для пасты Marcato и форму Emile Henry. Приём до 25 декабря."
+    />
+    <meta name="twitter:image" content="https://konkurs-3.vercel.app/og-image.jpg" />
+
+    <!-- Favicon Едим Дома -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" href="/favicon-192.png" />
+
+    <!-- Шрифты с кириллицей -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Prata&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..24,400,0..1,0&icon_names=add_circle,all_inclusive,arrow_forward,auto_awesome,calendar_today,check_circle,chevron_left,chevron_right,close,edit_note,emoji_events,expand_more,favorite,flag,fullscreen,login,menu,military_tech,photo_camera,post_add,restaurant_menu,south,swipe,timer,verified,workspace_premium&display=block"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet" />
+    </noscript>
+
+    <link rel="preload" as="image" href="/img/hero.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero.webp 1600w" imagesizes="(min-width: 1024px) 480px, 100vw" fetchpriority="high" />
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+      ym(759060, 'init', { webvisor: true, clickmap: true, referrer: document.referrer, url: location.href, accurateTrackBounce: true, trackLinks: true });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <noscript><div><img src="https://mc.yandex.ru/watch/759060" style="position: absolute; left: -9999px" alt="" /></div></noscript>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ruby focus:px-4 focus:py-2 focus:text-white">К содержимому</a>
+
+    <!-- ===== HEADER ===== -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-canvas-cream/95 shadow-[0_4px_20px_-2px_rgba(94,26,34,0.06)] backdrop-blur-xl">
+      <div class="wrap flex h-16 items-center justify-between gap-4 md:h-20">
+        <div class="flex min-w-0 items-center gap-space-lg">
+          <a href="https://www.edimdoma.ru" target="_blank" rel="noopener" class="flex shrink-0 items-center" aria-label="Едим Дома — на главную edimdoma.ru">
+            <img src="/img/logo/edimdoma.png" width="512" height="170" alt="Едим Дома" class="h-8 w-auto md:h-10" />
+          </a>
+          <div class="hidden items-center gap-space-md border-l border-metallic-border/60 pl-space-md xl:flex">
+            <span class="whitespace-nowrap font-label-sm text-label-sm uppercase text-on-surface-variant">при поддержке</span>
+            <a href="https://marcato.shop/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_marcato" data-place="header" class="flex items-center opacity-90 transition-opacity hover:opacity-100" aria-label="Marcato — интернет-магазин">
+              <img src="/img/logo/marcato-black.png" width="394" height="240" alt="Marcato" class="h-8 w-auto" />
+            </a>
+            <span class="h-6 w-px bg-metallic-border" aria-hidden="true"></span>
+            <a href="https://emilehenry.store/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_emilehenry" data-place="header" class="flex items-center opacity-90 transition-opacity hover:opacity-100" aria-label="Emile Henry — интернет-магазин">
+              <img src="/img/logo/emile-henry-black.png" width="443" height="240" alt="Emile Henry" class="h-9 w-auto" />
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 md:gap-space-lg">
+          <nav class="hidden items-center gap-space-lg lg:flex" aria-label="Разделы">
+            <a class="font-body-sm text-body-sm text-on-surface-variant transition-colors hover:text-ink-dark" href="#prizes">Призы</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant transition-colors hover:text-ink-dark" href="#how">Как участвовать</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant transition-colors hover:text-ink-dark" href="#rules">Условия</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant transition-colors hover:text-ink-dark" href="#faq">FAQ</a>
+          </nav>
+          <a class="btn-primary px-4 py-2.5 md:px-space-lg" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="header">
+            <span class="md:hidden">Участвовать</span><span class="hidden md:inline">Добавить рецепт</span>
+          </a>
+          <button type="button" class="mnav-btn -mr-2 flex h-11 w-11 items-center justify-center rounded-full text-ink-dark hover:bg-surface-container lg:hidden" aria-label="Меню" aria-expanded="false" aria-controls="mnav">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+          </button>
+        </div>
+      </div>
+      <div id="mnav" class="mnav border-t border-metallic-border/40 bg-canvas-cream lg:hidden">
+        <nav class="wrap flex flex-col py-2" aria-label="Мобильное меню">
+          <a class="py-3 font-body-md text-ink-dark" href="#prizes">Призы</a>
+          <a class="py-3 font-body-md text-ink-dark" href="#how">Как участвовать</a>
+          <a class="py-3 font-body-md text-ink-dark" href="#rules">Условия</a>
+          <a class="py-3 font-body-md text-ink-dark" href="#timeline">Даты</a>
+          <a class="py-3 font-body-md text-ink-dark" href="#partners">Партнёры</a>
+          <a class="py-3 font-body-md text-ink-dark" href="#faq">Вопросы и ответы</a>
+          <div class="flex items-center gap-6 border-t border-metallic-border/40 py-4">
+            <a href="https://marcato.shop/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_marcato" data-place="menu" aria-label="Marcato — интернет-магазин"><img src="/img/logo/marcato-black.png" width="394" height="240" alt="Marcato" loading="lazy" class="h-9 w-auto" /></a>
+            <a href="https://emilehenry.store/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_emilehenry" data-place="menu" aria-label="Emile Henry — интернет-магазин"><img src="/img/logo/emile-henry-black.png" width="443" height="240" alt="Emile Henry" loading="lazy" class="h-10 w-auto" /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="w-full pt-16 md:pt-20">
+      <!-- ===== 1. HERO ===== -->
+      <section class="relative w-full overflow-hidden bg-canvas-cream py-space-xl lg:py-space-2xl">
+        <div class="wrap">
+          <div class="grid grid-cols-1 items-center gap-space-xl lg:grid-cols-12 lg:gap-gutter">
+            <div class="flex min-w-0 flex-col items-start gap-space-lg lg:col-span-7">
+              <div class="inline-flex items-center gap-space-xs rounded-full bg-biscuit px-3.5 py-1.5 text-ruby shadow-sm">
+                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">auto_awesome</span>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider">Новогодний конкурс рецептов</span>
+              </div>
+              <div class="flex flex-col gap-space-sm">
+                <h1 class="font-display-hero text-display-hero-mobile text-ink-dark md:text-display-hero">Раскатаем!</h1>
+                <p class="max-w-xl font-body-xl text-body-xl text-on-surface-variant">
+                  Делитесь своими рецептами, собирайте лайки и выигрывайте культовые итальянские машинки для пасты Marcato и французскую керамическую форму Emile Henry.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center gap-space-sm">
+                <div class="flex items-center gap-2 rounded-xl bg-surface-pure px-space-md py-2.5 shadow-sm">
+                  <span class="material-symbols-outlined text-[20px] text-ruby" aria-hidden="true">calendar_today</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant">Приём рецептов</span>
+                    <span class="whitespace-nowrap font-label-md text-label-md text-ink-dark">25 ноября — 25 декабря</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 rounded-xl bg-surface-pure px-space-md py-2.5 shadow-sm">
+                  <span class="material-symbols-outlined text-[20px] text-amber-text" aria-hidden="true">military_tech</span>
+                  <div class="flex flex-col">
+                    <span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant">Итоги конкурса</span>
+                    <span class="whitespace-nowrap font-label-md text-label-md text-ink-dark">26 декабря</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full flex-col gap-space-sm sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:gap-space-md">
+                <a class="btn-primary px-8 py-4" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="hero">
+                  <span class="material-symbols-outlined text-[20px]" aria-hidden="true">restaurant_menu</span>
+                  <span>Добавить рецепт</span>
+                </a>
+                <a class="btn-outline px-7 py-4 text-ruby" href="#prizes">
+                  <span>Смотреть призы</span>
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">south</span>
+                </a>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Конкурс Едим Дома при поддержке итальянского Marcato и французского Emile Henry
+              </p>
+            </div>
+            <div class="relative min-w-0 lg:col-span-5">
+              <div class="relative w-full overflow-hidden rounded-2xl bg-surface-warm shadow-2xl">
+                <img
+                  src="/img/hero.webp"
+                  srcset="/img/hero-800.webp 800w, /img/hero.webp 1600w"
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  width="1600"
+                  height="1067"
+                  alt="Руки вытягивают свежие спагетти из красной машинки Marcato Atlas 150 Plus"
+                  fetchpriority="high"
+                  decoding="async"
+                  class="h-[360px] w-full object-cover object-[30%_50%] sm:h-[440px] lg:h-[520px]"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-ink-dark/80 via-transparent to-black/10"></div>
+                <div class="absolute left-4 top-4 flex items-center gap-2 rounded-full bg-surface-pure/95 px-3.5 py-1.5 shadow-md">
+                  <span class="h-2.5 w-2.5 rounded-full bg-ruby" aria-hidden="true"></span>
+                  <span class="whitespace-nowrap font-label-sm text-[12px] uppercase tracking-wider text-ink-dark">Marcato Atlas 150 Plus</span>
+                </div>
+                <div class="absolute bottom-5 left-5 right-5 text-white">
+                  <p class="font-tag-editorial text-[18px] italic leading-snug drop-shadow-md">«Вода, мука, Marcato.»</p>
+                  <div class="mt-2 flex items-center justify-between gap-3 border-t border-white/25 pt-2">
+                    <span class="font-label-sm text-[11px] uppercase tracking-wider">Сделано в Италии</span>
+                    <img src="/img/logo/marcato-white.png" width="394" height="240" alt="Marcato" class="h-8 w-auto" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. ПРИЗЫ ===== -->
+      <section class="relative w-full bg-surface-warm py-space-2xl" id="prizes">
+        <div class="wrap">
+          <div class="mx-auto mb-space-xl max-w-2xl text-center">
+            <div class="mb-space-sm inline-flex items-center rounded-full bg-ruby/10 px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest text-ruby">Награды победителям</div>
+            <h2 class="mb-space-sm font-headline-xl text-headline-xl-mobile text-ink-dark md:text-headline-xl">Призы конкурса</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Итальянские машинки для пасты Marcato и французская керамика Emile Henry для вашей кухни</p>
+          </div>
+
+          <div class="flex flex-col gap-space-xl">
+            <!-- Приз 1 -->
+            <article class="prize relative rounded-3xl border border-metallic-border/30 bg-surface-pure p-5 shadow-xl sm:p-8 lg:p-space-xl" aria-labelledby="prize1-title">
+              <div class="-mr-5 -mt-5 mb-4 flex justify-end sm:-mr-8 sm:-mt-8 lg:absolute lg:right-0 lg:top-0 lg:z-10 lg:m-0">
+                <div class="flex items-center gap-1.5 whitespace-nowrap rounded-bl-2xl rounded-tr-3xl bg-ruby px-6 py-2 font-label-sm text-label-sm uppercase tracking-wider text-white shadow-md">
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">workspace_premium</span> 1 место · Главный приз
+                </div>
+              </div>
+              <div class="grid grid-cols-1 items-start gap-gutter lg:grid-cols-12 lg:items-center">
+                <div class="min-w-0 lg:col-span-7">
+                  <!-- gallery:prize1 -->
+<div class="gallery flex min-w-0 flex-col gap-3" data-gallery="prize1" data-title="Лапшерезка Marcato Atlas 150 Plus, красная">
+<div class="g-pills -mx-1 flex gap-2 overflow-x-auto px-1 pb-1" role="group" aria-label="Ракурсы"><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="0" aria-pressed="true">В деле</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="1" aria-pressed="false">Ракурс 3/4</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="2" aria-pressed="false">Размеры</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="3" aria-pressed="false">Крупно</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="4" aria-pressed="false">На столе</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="5" aria-pressed="false">На кухне</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="6" aria-pressed="false">Лофт-кухня</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="7" aria-pressed="false">Светлая кухня</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="8" aria-pressed="false">С тестом</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="9" aria-pressed="false">На тёмном столе</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="10" aria-pressed="false">Детали</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="11" aria-pressed="false">Регулировка толщины</button></div>
+<div class="g-frame relative aspect-square overflow-hidden rounded-[20px] border border-metallic-border/30 bg-surface-pure shadow-md" role="region" aria-roledescription="карусель" aria-label="Фото: Лапшерезка Marcato Atlas 150 Plus, красная" tabindex="0">
+<div class="g-track"><figure class="g-slide m-0" aria-label="1 из 12"><img src="/img/p1-01-v-dele.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — в деле" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="2 из 12"><img src="/img/p1-02-rakurs.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — ракурс 3/4" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="3 из 12"><img src="/img/p1-03-razmery.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — размеры" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="4 из 12"><img src="/img/p1-04-krupno.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — крупно" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="5 из 12"><img src="/img/p1-05-na-stole.webp" width="800" height="1056" alt="Лапшерезка Marcato Atlas 150 Plus, красная — на столе" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="6 из 12"><img src="/img/p1-06-na-kuhne.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — на кухне" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="7 из 12"><img src="/img/p1-07-loft.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — лофт-кухня" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="8 из 12"><img src="/img/p1-08-svetlaya-kuhnya.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — светлая кухня" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="9 из 12"><img src="/img/p1-09-s-testom.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — с тестом" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="10 из 12"><img src="/img/p1-10-temnyi-stol.webp" width="1600" height="1068" alt="Лапшерезка Marcato Atlas 150 Plus, красная — на тёмном столе" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="11 из 12"><img src="/img/p1-11-detali.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — детали" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="12 из 12"><img src="/img/p1-12-tolshina.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150 Plus, красная — регулировка толщины" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure></div>
+<button type="button" class="g-prev absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-surface-pure/90 text-ink-dark shadow-lg transition-transform hover:bg-surface-pure active:scale-95" aria-label="Предыдущее фото"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">chevron_left</span></button>
+<button type="button" class="g-next absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-surface-pure/90 text-ink-dark shadow-lg transition-transform hover:bg-surface-pure active:scale-95" aria-label="Следующее фото"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">chevron_right</span></button>
+<div class="absolute right-3 top-3 flex items-center gap-1 whitespace-nowrap rounded-full bg-ink-dark/75 px-3 py-1 text-xs font-medium tracking-wide text-white" aria-live="polite"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">photo_camera</span><span class="g-count">1 / 12</span></div>
+<button type="button" class="g-open absolute bottom-3 left-3 flex items-center gap-1.5 whitespace-nowrap rounded-full bg-surface-pure/90 px-3.5 py-2 text-xs font-semibold text-ink-dark shadow-md transition-all hover:bg-surface-pure"><span class="material-symbols-outlined text-[16px]" aria-hidden="true">fullscreen</span><span>Все фото</span></button>
+<div class="g-dots absolute bottom-4 right-3 flex max-w-[45%] items-center gap-1 overflow-hidden rounded-full bg-ink-dark/50 px-2 py-1.5" aria-hidden="true"><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="true"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span></div>
+</div>
+<div class="g-thumbs -mx-1 flex gap-2 overflow-x-auto px-1 py-1" role="group" aria-label="Превью"><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="0" aria-label="Фото 1: В деле" aria-current="true"><img src="/img/thumb/p1-01-v-dele.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="1" aria-label="Фото 2: Ракурс 3/4" aria-current="false"><img src="/img/thumb/p1-02-rakurs.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="2" aria-label="Фото 3: Размеры" aria-current="false"><img src="/img/thumb/p1-03-razmery.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="3" aria-label="Фото 4: Крупно" aria-current="false"><img src="/img/thumb/p1-04-krupno.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="4" aria-label="Фото 5: На столе" aria-current="false"><img src="/img/thumb/p1-05-na-stole.webp" width="400" height="528" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="5" aria-label="Фото 6: На кухне" aria-current="false"><img src="/img/thumb/p1-06-na-kuhne.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="6" aria-label="Фото 7: Лофт-кухня" aria-current="false"><img src="/img/thumb/p1-07-loft.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="7" aria-label="Фото 8: Светлая кухня" aria-current="false"><img src="/img/thumb/p1-08-svetlaya-kuhnya.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="8" aria-label="Фото 9: С тестом" aria-current="false"><img src="/img/thumb/p1-09-s-testom.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="9" aria-label="Фото 10: На тёмном столе" aria-current="false"><img src="/img/thumb/p1-10-temnyi-stol.webp" width="400" height="267" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="10" aria-label="Фото 11: Детали" aria-current="false"><img src="/img/thumb/p1-11-detali.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="11" aria-label="Фото 12: Регулировка толщины" aria-current="false"><img src="/img/thumb/p1-12-tolshina.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button></div>
+<p class="flex items-center gap-1.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">swipe</span><span>Листайте, чтобы рассмотреть приз со всех сторон</span></p>
+</div>
+<!-- /gallery:prize1 -->
+                </div>
+                <div class="flex min-w-0 flex-col gap-4 lg:col-span-5 lg:pt-8">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-metallic-border/50 bg-surface-warm px-3 py-1">
+                      <span class="text-sm leading-none" aria-hidden="true">🇮🇹</span>
+                      <span class="font-label-sm text-[12px] uppercase tracking-wider text-ink-dark">Сделано в Италии</span>
+                    </div>
+                    <img src="/img/logo/marcato-black.png" width="394" height="240" alt="Marcato" loading="lazy" class="h-8 w-auto" />
+                  </div>
+                  <div>
+                    <h3 id="prize1-title" class="mb-2 font-headline-md text-headline-md text-ink-dark">Лапшерезка Marcato Atlas&nbsp;150&nbsp;Plus, красная</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Культовая итальянская машинка для пасты в ярком красном цвете: корпус из хромированной стали, ролики из анодированного алюминия. Atlas выпускают с 1965 года.
+                    </p>
+                  </div>
+                  <dl class="grid grid-cols-2 gap-y-3 rounded-xl border border-metallic-border/30 bg-canvas-cream p-3 text-center sm:grid-cols-4 sm:divide-x sm:divide-metallic-border/40">
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">ширина раскатки</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">150&nbsp;мм</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">толщин теста</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">10</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">вида пасты</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">4</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">лет гарантии</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">2+8</dd></div>
+                  </dl>
+                  <ul class="grid grid-cols-1 gap-2 text-[13px] text-ink-dark sm:grid-cols-2">
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Корпус — хромированная сталь</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Ролики — анодированный алюминий</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Лазанья, феттучини, тальолини, спагетти</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Толщина теста — 10 положений ручки</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Крепится к столу зажимом</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Atlas выпускают с 1965 года</span></li>
+                  </ul>
+                  <details class="group border-t border-metallic-border/30 pt-2 text-[13px] text-ink-dark">
+                    <summary class="flex cursor-pointer select-none list-none items-center justify-between py-1 font-semibold text-ruby hover:text-ruby-dark [&::-webkit-details-marker]:hidden">
+                      <span>Все характеристики</span><span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-open:rotate-180" aria-hidden="true">expand_more</span>
+                    </summary>
+                    <dl class="mt-2 space-y-1.5 text-on-surface-variant">
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Артикул</dt><dd class="font-medium text-ink-dark">AT+RSO</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Ширина раскатки</dt><dd class="nowrap font-medium text-ink-dark">150 мм</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Корпус</dt><dd class="text-right font-medium text-ink-dark">хромированная сталь</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Ролики</dt><dd class="text-right font-medium text-ink-dark">анодированный алюминий</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Гарантия</dt><dd class="nowrap font-medium text-ink-dark">2+8 лет</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Страна</dt><dd class="font-medium text-ink-dark">Италия</dd></div>
+                    </dl>
+                  </details>
+                  <div class="mt-2 flex flex-wrap items-center gap-2 border-t border-metallic-border/40 pt-4">
+                    <a class="btn-primary px-5 py-3 text-[13px]" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="prize1">Добавить рецепт</a>
+                    <a class="btn-outline px-4 py-3 text-[13px]" href="https://marcato.shop/products/lapsherezka-testoraskatka-ruchnaya-marcato-atlas-plus-150-krasnaya-mashinka-dlya-pasty-krasnyiy-217656?variant=101391&amp;utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma&amp;utm_term=at+rso" target="_blank" rel="noopener sponsored" data-goal="click_shop_prize1"><span>В магазин</span><span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Приз 2 -->
+            <article class="prize relative rounded-3xl border border-metallic-border/30 bg-surface-pure p-5 shadow-xl sm:p-8 lg:p-space-xl" aria-labelledby="prize2-title">
+              <div class="-mr-5 -mt-5 mb-4 flex justify-end sm:-mr-8 sm:-mt-8 lg:absolute lg:right-0 lg:top-0 lg:z-10 lg:m-0">
+                <div class="flex items-center gap-1.5 whitespace-nowrap rounded-bl-2xl rounded-tr-3xl bg-tertiary-container px-6 py-2 font-label-sm text-label-sm uppercase tracking-wider text-white shadow-md">
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">military_tech</span> 2 место · Хром
+                </div>
+              </div>
+              <div class="grid grid-cols-1 items-start gap-gutter lg:grid-cols-12 lg:items-center">
+                <div class="flex min-w-0 flex-col gap-4 lg:order-1 lg:col-span-5 lg:pt-8 order-2">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-metallic-border/50 bg-surface-warm px-3 py-1">
+                      <span class="text-sm leading-none" aria-hidden="true">🇮🇹</span>
+                      <span class="font-label-sm text-[12px] uppercase tracking-wider text-ink-dark">Сделано в Италии</span>
+                    </div>
+                    <img src="/img/logo/marcato-black.png" width="394" height="240" alt="Marcato" loading="lazy" class="h-8 w-auto" />
+                  </div>
+                  <div>
+                    <h3 id="prize2-title" class="mb-2 font-headline-md text-headline-md text-ink-dark">Лапшерезка Marcato Atlas&nbsp;150, хром</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Классическая Atlas в цвете матовый хром: корпус из нержавеющей стали. Раскатывает тесто толщиной от 0,6 до 4,8 мм и режет лазанью, феттучини и тальолини.
+                    </p>
+                  </div>
+                  <dl class="grid grid-cols-2 gap-y-3 rounded-xl border border-metallic-border/30 bg-canvas-cream p-3 text-center sm:grid-cols-4 sm:divide-x sm:divide-metallic-border/40">
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">ширина раскатки</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">150&nbsp;мм</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">мм толщина теста</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">0,6–4,8</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">вида пасты</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">3</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">сделано</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">Италия</dd></div>
+                  </dl>
+                  <ul class="grid grid-cols-1 gap-2 text-[13px] text-ink-dark sm:grid-cols-2">
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Корпус — нержавеющая сталь</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Цвет — матовый хром</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Лазанья, феттучини, тальолини</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Подходит мотор Pastadrive (продаётся отдельно)</span></li>
+                  </ul>
+                  <details class="group border-t border-metallic-border/30 pt-2 text-[13px] text-ink-dark">
+                    <summary class="flex cursor-pointer select-none list-none items-center justify-between py-1 font-semibold text-ruby hover:text-ruby-dark [&::-webkit-details-marker]:hidden">
+                      <span>Все характеристики</span><span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-open:rotate-180" aria-hidden="true">expand_more</span>
+                    </summary>
+                    <dl class="mt-2 space-y-1.5 text-on-surface-variant">
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Артикул</dt><dd class="font-medium text-ink-dark">AT+ICE</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Корпус</dt><dd class="text-right font-medium text-ink-dark">нержавеющая сталь</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Цвет</dt><dd class="text-right font-medium text-ink-dark">матовый хром</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Толщина теста</dt><dd class="nowrap font-medium text-ink-dark">0,6–4,8 мм</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Мотор Pastadrive</dt><dd class="text-right font-medium text-ink-dark">продаётся отдельно</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Страна</dt><dd class="font-medium text-ink-dark">Италия</dd></div>
+                    </dl>
+                  </details>
+                  <div class="mt-2 flex flex-wrap items-center gap-2 border-t border-metallic-border/40 pt-4">
+                    <a class="btn-primary px-5 py-3 text-[13px]" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="prize2">Добавить рецепт</a>
+                    <a class="btn-outline px-4 py-3 text-[13px]" href="https://marcato.shop/products/lapsherezka-testoraskatka-ruchnaya-marcato-atlas-150-hromirovannaya-mashinka-dlya-pasty-217728?variant=104555&amp;utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma&amp;utm_term=at+ice" target="_blank" rel="noopener sponsored" data-goal="click_shop_prize2"><span>В магазин</span><span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span></a>
+                  </div>
+                </div>
+                <div class="order-1 min-w-0 lg:order-2 lg:col-span-7">
+                  <!-- gallery:prize2 -->
+<div class="gallery flex min-w-0 flex-col gap-3" data-gallery="prize2" data-title="Лапшерезка Marcato Atlas 150, хром">
+<div class="g-pills -mx-1 flex gap-2 overflow-x-auto px-1 pb-1" role="group" aria-label="Ракурсы"><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="0" aria-pressed="true">На дереве с мукой</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="1" aria-pressed="false">В деле</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="2" aria-pressed="false">С пастой</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="3" aria-pressed="false">Крупно</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="4" aria-pressed="false">Сбоку</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="5" aria-pressed="false">Спереди</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="6" aria-pressed="false">Atlas 150</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="7" aria-pressed="false">Преимущества</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="8" aria-pressed="false">Функции</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="9" aria-pressed="false">Виды пасты</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="10" aria-pressed="false">Рецепт теста</button></div>
+<div class="g-frame relative aspect-square overflow-hidden rounded-[20px] border border-metallic-border/30 bg-surface-pure shadow-md" role="region" aria-roledescription="карусель" aria-label="Фото: Лапшерезка Marcato Atlas 150, хром" tabindex="0">
+<div class="g-track"><figure class="g-slide m-0" aria-label="1 из 11"><img src="/img/p2-01-na-dereve.webp" width="1500" height="1000" alt="Лапшерезка Marcato Atlas 150, хром — на дереве с мукой" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="2 из 11"><img src="/img/p2-02-v-dele.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — в деле" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="3 из 11"><img src="/img/p2-03-s-pastoy.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — с пастой" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="4 из 11"><img src="/img/p2-04-krupno.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — крупно" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="5 из 11"><img src="/img/p2-05-sboku.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — сбоку" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="6 из 11"><img src="/img/p2-06-speredi.webp" width="1600" height="1067" alt="Лапшерезка Marcato Atlas 150, хром — спереди" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="7 из 11"><img src="/img/p2-07-atlas150.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — atlas 150" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="8 из 11"><img src="/img/p2-08-preimushestva.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — преимущества" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="9 из 11"><img src="/img/p2-09-funkcii.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — функции" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="10 из 11"><img src="/img/p2-10-vidy-pasty.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — виды пасты" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="11 из 11"><img src="/img/p2-11-recept-testa.webp" width="900" height="1200" alt="Лапшерезка Marcato Atlas 150, хром — рецепт теста" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure></div>
+<button type="button" class="g-prev absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-surface-pure/90 text-ink-dark shadow-lg transition-transform hover:bg-surface-pure active:scale-95" aria-label="Предыдущее фото"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">chevron_left</span></button>
+<button type="button" class="g-next absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-surface-pure/90 text-ink-dark shadow-lg transition-transform hover:bg-surface-pure active:scale-95" aria-label="Следующее фото"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">chevron_right</span></button>
+<div class="absolute right-3 top-3 flex items-center gap-1 whitespace-nowrap rounded-full bg-ink-dark/75 px-3 py-1 text-xs font-medium tracking-wide text-white" aria-live="polite"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">photo_camera</span><span class="g-count">1 / 11</span></div>
+<button type="button" class="g-open absolute bottom-3 left-3 flex items-center gap-1.5 whitespace-nowrap rounded-full bg-surface-pure/90 px-3.5 py-2 text-xs font-semibold text-ink-dark shadow-md transition-all hover:bg-surface-pure"><span class="material-symbols-outlined text-[16px]" aria-hidden="true">fullscreen</span><span>Все фото</span></button>
+<div class="g-dots absolute bottom-4 right-3 flex max-w-[45%] items-center gap-1 overflow-hidden rounded-full bg-ink-dark/50 px-2 py-1.5" aria-hidden="true"><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="true"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span></div>
+</div>
+<div class="g-thumbs -mx-1 flex gap-2 overflow-x-auto px-1 py-1" role="group" aria-label="Превью"><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="0" aria-label="Фото 1: На дереве с мукой" aria-current="true"><img src="/img/thumb/p2-01-na-dereve.webp" width="400" height="267" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="1" aria-label="Фото 2: В деле" aria-current="false"><img src="/img/thumb/p2-02-v-dele.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="2" aria-label="Фото 3: С пастой" aria-current="false"><img src="/img/thumb/p2-03-s-pastoy.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="3" aria-label="Фото 4: Крупно" aria-current="false"><img src="/img/thumb/p2-04-krupno.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="4" aria-label="Фото 5: Сбоку" aria-current="false"><img src="/img/thumb/p2-05-sboku.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="5" aria-label="Фото 6: Спереди" aria-current="false"><img src="/img/thumb/p2-06-speredi.webp" width="400" height="267" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="6" aria-label="Фото 7: Atlas 150" aria-current="false"><img src="/img/thumb/p2-07-atlas150.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="7" aria-label="Фото 8: Преимущества" aria-current="false"><img src="/img/thumb/p2-08-preimushestva.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="8" aria-label="Фото 9: Функции" aria-current="false"><img src="/img/thumb/p2-09-funkcii.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="9" aria-label="Фото 10: Виды пасты" aria-current="false"><img src="/img/thumb/p2-10-vidy-pasty.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="10" aria-label="Фото 11: Рецепт теста" aria-current="false"><img src="/img/thumb/p2-11-recept-testa.webp" width="400" height="534" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button></div>
+<p class="flex items-center gap-1.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">swipe</span><span>Листайте, чтобы рассмотреть приз со всех сторон</span></p>
+</div>
+<!-- /gallery:prize2 -->
+                </div>
+              </div>
+            </article>
+
+            <!-- Приз 3 -->
+            <article class="prize relative rounded-3xl border border-metallic-border/30 bg-surface-pure p-5 shadow-xl sm:p-8 lg:p-space-xl" aria-labelledby="prize3-title">
+              <div class="-mr-5 -mt-5 mb-4 flex justify-end sm:-mr-8 sm:-mt-8 lg:absolute lg:right-0 lg:top-0 lg:z-10 lg:m-0">
+                <div class="flex items-center gap-1.5 whitespace-nowrap rounded-bl-2xl rounded-tr-3xl bg-secondary px-6 py-2 font-label-sm text-label-sm uppercase tracking-wider text-white shadow-md">
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">emoji_events</span> 3 место · Керамика
+                </div>
+              </div>
+              <div class="grid grid-cols-1 items-start gap-gutter lg:grid-cols-12 lg:items-center">
+                <div class="min-w-0 lg:col-span-7">
+                  <!-- gallery:prize3 -->
+<div class="gallery flex min-w-0 flex-col gap-3" data-gallery="prize3" data-title="Форма для кекса Emile Henry, гранат">
+<div class="g-pills -mx-1 flex gap-2 overflow-x-auto px-1 pb-1" role="group" aria-label="Ракурсы"><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="0" aria-pressed="true">С кексом</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="1" aria-pressed="false">С хлебом</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="2" aria-pressed="false">Режем в форме</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="3" aria-pressed="false">К празднику</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="4" aria-pressed="false">В духовке</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="5" aria-pressed="false">Ракурс 3/4</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="6" aria-pressed="false">Спереди</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="7" aria-pressed="false">Сверху</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="8" aria-pressed="false">Размеры</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="9" aria-pressed="false">Made in France</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="10" aria-pressed="false">С 1850 года</button><button type="button" class="g-pill shrink-0 whitespace-nowrap rounded-full bg-surface-container-high px-3.5 py-1.5 text-xs font-semibold text-on-surface-variant transition-colors hover:bg-biscuit" data-i="11" aria-pressed="false">Ручная работа</button></div>
+<div class="g-frame relative aspect-square overflow-hidden rounded-[20px] border border-metallic-border/30 bg-surface-pure shadow-md" role="region" aria-roledescription="карусель" aria-label="Фото: Форма для кекса Emile Henry, гранат" tabindex="0">
+<div class="g-track"><figure class="g-slide m-0" aria-label="1 из 12"><img src="/img/p3-01-s-keksom.webp" width="1000" height="1000" alt="Форма для кекса Emile Henry, гранат — с кексом" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="2 из 12"><img src="/img/p3-02-s-hlebom.webp" width="900" height="900" alt="Форма для кекса Emile Henry, гранат — с хлебом" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="3 из 12"><img src="/img/p3-03-rezhem.webp" width="800" height="800" alt="Форма для кекса Emile Henry, гранат — режем в форме" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="4 из 12"><img src="/img/p3-04-k-prazdniku.webp" width="900" height="900" alt="Форма для кекса Emile Henry, гранат — к празднику" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="5 из 12"><img src="/img/p3-05-v-duhovke.webp" width="1000" height="1000" alt="Форма для кекса Emile Henry, гранат — в духовке" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="6 из 12"><img src="/img/p3-06-rakurs.webp" width="900" height="900" alt="Форма для кекса Emile Henry, гранат — ракурс 3/4" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="7 из 12"><img src="/img/p3-07-speredi.webp" width="800" height="800" alt="Форма для кекса Emile Henry, гранат — спереди" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="8 из 12"><img src="/img/p3-08-sverhu.webp" width="800" height="800" alt="Форма для кекса Emile Henry, гранат — сверху" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="9 из 12"><img src="/img/p3-09-razmery.webp" width="1080" height="1080" alt="Форма для кекса Emile Henry, гранат — размеры" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="10 из 12"><img src="/img/p3-10-made-in-france.webp" width="1080" height="1080" alt="Форма для кекса Emile Henry, гранат — Made in France" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="11 из 12"><img src="/img/p3-11-s-1850.webp" width="1000" height="1000" alt="Форма для кекса Emile Henry, гранат — с 1850 года" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure><figure class="g-slide m-0" aria-label="12 из 12"><img src="/img/p3-12-ruchnaya-rabota.webp" width="1000" height="1000" alt="Форма для кекса Emile Henry, гранат — ручная работа" loading="lazy" decoding="async" class="h-full w-full object-contain" /></figure></div>
+<button type="button" class="g-prev absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-surface-pure/90 text-ink-dark shadow-lg transition-transform hover:bg-surface-pure active:scale-95" aria-label="Предыдущее фото"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">chevron_left</span></button>
+<button type="button" class="g-next absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-surface-pure/90 text-ink-dark shadow-lg transition-transform hover:bg-surface-pure active:scale-95" aria-label="Следующее фото"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">chevron_right</span></button>
+<div class="absolute right-3 top-3 flex items-center gap-1 whitespace-nowrap rounded-full bg-ink-dark/75 px-3 py-1 text-xs font-medium tracking-wide text-white" aria-live="polite"><span class="material-symbols-outlined text-[14px]" aria-hidden="true">photo_camera</span><span class="g-count">1 / 12</span></div>
+<button type="button" class="g-open absolute bottom-3 left-3 flex items-center gap-1.5 whitespace-nowrap rounded-full bg-surface-pure/90 px-3.5 py-2 text-xs font-semibold text-ink-dark shadow-md transition-all hover:bg-surface-pure"><span class="material-symbols-outlined text-[16px]" aria-hidden="true">fullscreen</span><span>Все фото</span></button>
+<div class="g-dots absolute bottom-4 right-3 flex max-w-[45%] items-center gap-1 overflow-hidden rounded-full bg-ink-dark/50 px-2 py-1.5" aria-hidden="true"><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="true"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span><span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="false"></span></div>
+</div>
+<div class="g-thumbs -mx-1 flex gap-2 overflow-x-auto px-1 py-1" role="group" aria-label="Превью"><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="0" aria-label="Фото 1: С кексом" aria-current="true"><img src="/img/thumb/p3-01-s-keksom.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="1" aria-label="Фото 2: С хлебом" aria-current="false"><img src="/img/thumb/p3-02-s-hlebom.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="2" aria-label="Фото 3: Режем в форме" aria-current="false"><img src="/img/thumb/p3-03-rezhem.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="3" aria-label="Фото 4: К празднику" aria-current="false"><img src="/img/thumb/p3-04-k-prazdniku.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="4" aria-label="Фото 5: В духовке" aria-current="false"><img src="/img/thumb/p3-05-v-duhovke.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="5" aria-label="Фото 6: Ракурс 3/4" aria-current="false"><img src="/img/thumb/p3-06-rakurs.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="6" aria-label="Фото 7: Спереди" aria-current="false"><img src="/img/thumb/p3-07-speredi.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="7" aria-label="Фото 8: Сверху" aria-current="false"><img src="/img/thumb/p3-08-sverhu.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="8" aria-label="Фото 9: Размеры" aria-current="false"><img src="/img/thumb/p3-09-razmery.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="9" aria-label="Фото 10: Made in France" aria-current="false"><img src="/img/thumb/p3-10-made-in-france.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="10" aria-label="Фото 11: С 1850 года" aria-current="false"><img src="/img/thumb/p3-11-s-1850.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button><button type="button" class="g-thumb h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-transparent bg-surface-pure opacity-70 transition-opacity hover:opacity-100 md:h-[72px] md:w-[72px]" data-i="11" aria-label="Фото 12: Ручная работа" aria-current="false"><img src="/img/thumb/p3-12-ruchnaya-rabota.webp" width="400" height="400" alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" /></button></div>
+<p class="flex items-center gap-1.5 text-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">swipe</span><span>Листайте, чтобы рассмотреть приз со всех сторон</span></p>
+</div>
+<!-- /gallery:prize3 -->
+                </div>
+                <div class="flex min-w-0 flex-col gap-4 lg:col-span-5 lg:pt-8">
+                  <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="inline-flex items-center gap-2 rounded-full border border-metallic-border/50 bg-surface-warm px-3 py-1">
+                      <span class="text-sm leading-none" aria-hidden="true">🇫🇷</span>
+                      <span class="font-label-sm text-[12px] uppercase tracking-wider text-ink-dark">Сделано во Франции</span>
+                    </div>
+                    <img src="/img/logo/emile-henry-black.png" width="443" height="240" alt="Emile Henry" loading="lazy" class="h-9 w-auto" />
+                  </div>
+                  <div>
+                    <h3 id="prize3-title" class="mb-2 font-headline-md text-headline-md text-ink-dark">Форма для кекса Emile Henry, гранат</h3>
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Прямоугольная форма из бургундской глины в глубоком гранатовом цвете, покрыта глазурью внутри и снаружи. Кексы и хлеб пропекаются равномерно и не пересыхают.
+                    </p>
+                  </div>
+                  <dl class="grid grid-cols-2 gap-y-3 rounded-xl border border-metallic-border/30 bg-canvas-cream p-3 text-center sm:grid-cols-4 sm:divide-x sm:divide-metallic-border/40">
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">объём</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">1,8&nbsp;л</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">длина</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">31,5&nbsp;см</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">гарантии</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">10&nbsp;лет</dd></div>
+                    <div class="flex flex-col items-center px-1"><dt class="order-2 mt-0.5 text-[11px] leading-tight text-on-surface-variant">сделано</dt><dd class="order-1 whitespace-nowrap font-headline-sm text-[20px] leading-tight text-ruby">Франция</dd></div>
+                  </dl>
+                  <ul class="grid grid-cols-1 gap-2 text-[13px] text-ink-dark sm:grid-cols-2">
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Бургундская глина, глазурь внутри и снаружи</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Духовка, СВЧ и посудомойка</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Без свинца, кадмия и никеля</span></li>
+                    <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[16px] text-ruby" aria-hidden="true">check_circle</span><span>Можно резать прямо в форме</span></li>
+                  </ul>
+                  <details class="group border-t border-metallic-border/30 pt-2 text-[13px] text-ink-dark">
+                    <summary class="flex cursor-pointer select-none list-none items-center justify-between py-1 font-semibold text-ruby hover:text-ruby-dark [&::-webkit-details-marker]:hidden">
+                      <span>Все характеристики</span><span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-open:rotate-180" aria-hidden="true">expand_more</span>
+                    </summary>
+                    <dl class="mt-2 space-y-1.5 text-on-surface-variant">
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Артикул</dt><dd class="font-medium text-ink-dark">346180</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Материал</dt><dd class="text-right font-medium text-ink-dark">бургундская глина</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Объём</dt><dd class="nowrap font-medium text-ink-dark">1,8 л</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Размеры</dt><dd class="nowrap font-medium text-ink-dark">31,5 × 13,5 × 9 см</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Можно</dt><dd class="text-right font-medium text-ink-dark">духовка, СВЧ, посудомойка</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Гарантия</dt><dd class="nowrap font-medium text-ink-dark">10 лет</dd></div>
+                      <div class="flex items-baseline justify-between gap-3 border-b border-dotted border-metallic-border/60 pb-1"><dt>Страна</dt><dd class="font-medium text-ink-dark">Франция</dd></div>
+                    </dl>
+                  </details>
+                  <div class="mt-2 flex flex-wrap items-center gap-2 border-t border-metallic-border/40 pt-4">
+                    <a class="btn-primary px-5 py-3 text-[13px]" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="prize3">Добавить рецепт</a>
+                    <a class="btn-outline px-4 py-3 text-[13px]" href="https://emilehenry.store/products/forma-dlya-vypechki-keksa-emile-henry-keramicheskaya-pryamougolnaya-315-h-13-sm-101021?variant=100429&amp;utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma&amp;utm_term=346180" target="_blank" rel="noopener sponsored" data-goal="click_shop_prize3"><span>В магазин</span><span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. КАК УЧАСТВОВАТЬ ===== -->
+      <section class="w-full bg-canvas-cream py-space-2xl" id="how">
+        <div class="wrap">
+          <div class="mb-space-xl flex flex-col justify-between gap-space-md md:flex-row md:items-end">
+            <div>
+              <span class="eyebrow">Простой путь к победе</span>
+              <h2 class="mt-1 font-headline-xl text-headline-xl-mobile text-ink-dark md:text-headline-xl">Как участвовать</h2>
+            </div>
+            <p class="max-w-md font-body-sm text-body-sm text-on-surface-variant">Пять шагов — и ваш рецепт борется за один из трёх призов.</p>
+          </div>
+          <ol class="grid grid-cols-1 gap-gutter sm:grid-cols-2 xl:grid-cols-5">
+            <li class="flex flex-col rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <div class="mb-space-md flex items-center justify-between">
+                <span class="font-tag-editorial text-4xl text-ruby">01</span>
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container-low text-ruby"><span class="material-symbols-outlined" aria-hidden="true">login</span></span>
+              </div>
+              <h3 class="mb-2 font-headline-sm text-[18px] leading-snug text-ink-dark">Войдите на edimdoma.ru</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Зарегистрируйтесь или войдите в свой профиль на сайте.</p>
+            </li>
+            <li class="flex flex-col rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <div class="mb-space-md flex items-center justify-between">
+                <span class="font-tag-editorial text-4xl text-ruby">02</span>
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container-low text-ruby"><span class="material-symbols-outlined" aria-hidden="true">post_add</span></span>
+              </div>
+              <h3 class="mb-2 font-headline-sm text-[18px] leading-snug text-ink-dark">Нажмите «Добавить рецепт»</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Заполните ингредиенты, пошаговое описание и добавьте свои фото.</p>
+            </li>
+            <li class="flex flex-col rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <div class="mb-space-md flex items-center justify-between">
+                <span class="font-tag-editorial text-4xl text-ruby">03</span>
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container-low text-ruby"><span class="material-symbols-outlined" aria-hidden="true">check_circle</span></span>
+              </div>
+              <h3 class="mb-2 font-headline-sm text-[18px] leading-snug text-ink-dark">Отметьте участие</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Поставьте галочку «Участвовать в конкурсе» в форме рецепта.</p>
+            </li>
+            <li class="flex flex-col rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <div class="mb-space-md flex items-center justify-between">
+                <span class="font-tag-editorial text-4xl text-ruby">04</span>
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container-low text-ruby"><span class="material-symbols-outlined" aria-hidden="true">verified</span></span>
+              </div>
+              <h3 class="mb-2 font-headline-sm text-[18px] leading-snug text-ink-dark">Пройдите модерацию</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">После проверки модератором рецепт попадёт в конкурс.</p>
+            </li>
+            <li class="flex flex-col rounded-2xl bg-surface-pure p-space-lg shadow-card sm:col-span-2 xl:col-span-1">
+              <div class="mb-space-md flex items-center justify-between">
+                <span class="font-tag-editorial text-4xl text-ruby">05</span>
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container-low text-ruby"><span class="material-symbols-outlined" aria-hidden="true">favorite</span></span>
+              </div>
+              <h3 class="mb-2 font-headline-sm text-[18px] leading-snug text-ink-dark">Собирайте лайки</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Делитесь ссылкой на рецепт с друзьями — побеждают лайки.</p>
+              <p class="mt-auto border-t border-surface-container-high pt-space-sm text-[12px] font-semibold text-ruby">Итоги — 26 декабря</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== 4. УСЛОВИЯ ===== -->
+      <section class="w-full bg-surface-warm py-space-2xl" id="rules">
+        <div class="wrap">
+          <div class="mx-auto mb-space-lg max-w-xl text-center">
+            <span class="eyebrow">Регламент</span>
+            <h2 class="mt-1 font-headline-lg text-headline-xl-mobile text-ink-dark md:text-headline-lg">Условия участия</h2>
+          </div>
+          <div class="grid grid-cols-1 gap-gutter md:grid-cols-3">
+            <div class="flex items-start gap-space-md rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-biscuit text-ruby"><span class="material-symbols-outlined text-[26px]" aria-hidden="true">edit_note</span></span>
+              <div>
+                <h3 class="mb-1 font-headline-sm text-[18px] text-ink-dark">Авторский рецепт</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Рецепт ваш и раньше нигде не публиковался.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-space-md rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-biscuit text-ruby"><span class="material-symbols-outlined text-[26px]" aria-hidden="true">photo_camera</span></span>
+              <div>
+                <h3 class="mb-1 font-headline-sm text-[18px] text-ink-dark">Только свои фотографии</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Фото блюда — только ваши, не из интернета.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-space-md rounded-2xl bg-surface-pure p-space-lg shadow-card">
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-biscuit text-ruby"><span class="material-symbols-outlined text-[26px]" aria-hidden="true">all_inclusive</span></span>
+              <div>
+                <h3 class="mb-1 font-headline-sm text-[18px] text-ink-dark">Рецептов — сколько угодно</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Ограничений нет: добавляйте столько рецептов, сколько хотите.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-space-lg text-center font-body-sm text-body-sm font-semibold text-ruby">Жюри нет: побеждают три рецепта с наибольшим числом лайков на 25 декабря, 23:59&nbsp;МСК</p>
+        </div>
+      </section>
+
+      <!-- ===== 5. ТАЙМЛАЙН ===== -->
+      <section class="w-full bg-canvas-cream py-space-2xl" id="timeline">
+        <div class="wrap">
+          <div class="mx-auto mb-space-xl max-w-xl text-center">
+            <span class="eyebrow">Календарь событий</span>
+            <h2 class="mt-1 font-headline-xl text-headline-xl-mobile text-ink-dark md:text-headline-xl">Таймлайн конкурса</h2>
+            <p class="mt-2 font-body-sm text-body-sm text-on-surface-variant">Следите за ключевыми датами, чтобы вовремя добавить рецепт и собрать лайки</p>
+          </div>
+          <div class="relative rounded-2xl bg-surface-pure p-6 shadow-card md:p-space-xl">
+            <div class="absolute left-[16%] right-[16%] top-[64px] hidden h-[2px] bg-metallic-border md:block" aria-hidden="true"></div>
+            <ol class="relative grid grid-cols-1 gap-space-xl md:grid-cols-3">
+              <li class="flex flex-col items-center text-center">
+                <span class="z-10 mb-space-md flex h-12 w-12 items-center justify-center rounded-full bg-ruby text-white shadow-lg ring-8 ring-ruby/10"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">flag</span></span>
+                <span class="mb-2 inline-block whitespace-nowrap rounded bg-biscuit px-3 py-1 font-label-sm text-label-sm text-ruby">25 ноября</span>
+                <h3 class="mb-1 font-headline-sm text-[20px] text-ink-dark">Старт приёма рецептов</h3>
+                <p class="max-w-xs font-body-sm text-body-sm text-on-surface-variant">Публикуйте авторские рецепты с отметкой «Участвовать в конкурсе».</p>
+              </li>
+              <li class="flex flex-col items-center text-center">
+                <span class="z-10 mb-space-md flex h-12 w-12 items-center justify-center rounded-full bg-brand-accent-amber text-white shadow-lg ring-8 ring-brand-accent-amber/10"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">timer</span></span>
+                <span class="mb-2 inline-block whitespace-nowrap rounded bg-brand-accent-amber/15 px-3 py-1 font-label-sm text-label-sm text-amber-text">25 декабря, 23:59 МСК</span>
+                <h3 class="mb-1 font-headline-sm text-[20px] text-ink-dark">Окончание приёма</h3>
+                <p class="max-w-xs font-body-sm text-body-sm text-on-surface-variant">Последний день приёма рецептов. Лайки считаем до 23:59 по Москве.</p>
+              </li>
+              <li class="flex flex-col items-center text-center">
+                <span class="z-10 mb-space-md flex h-12 w-12 items-center justify-center rounded-full bg-wine-cta text-white shadow-lg ring-8 ring-wine-cta/10"><span class="material-symbols-outlined text-[22px]" aria-hidden="true">emoji_events</span></span>
+                <span class="mb-2 inline-block whitespace-nowrap rounded bg-biscuit px-3 py-1 font-label-sm text-label-sm text-ruby">26 декабря</span>
+                <h3 class="mb-1 font-headline-sm text-[20px] text-ink-dark">Объявление итогов</h3>
+                <p class="max-w-xs font-body-sm text-body-sm text-on-surface-variant">Объявляем три рецепта с наибольшим числом лайков.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. ПАРТНЁРЫ ===== -->
+      <section class="w-full bg-surface-warm py-space-2xl" id="partners">
+        <div class="wrap">
+          <div class="mx-auto mb-space-xl max-w-xl text-center">
+            <span class="eyebrow">Европейские традиции</span>
+            <h2 class="mt-1 font-headline-xl text-headline-xl-mobile text-ink-dark md:text-headline-xl">Партнёры проекта</h2>
+            <p class="mt-2 font-body-sm text-body-sm text-on-surface-variant">Итальянские машинки для пасты и французская керамика с многолетней историей</p>
+          </div>
+          <div class="grid grid-cols-1 gap-gutter lg:grid-cols-2">
+            <div class="flex flex-col justify-between rounded-2xl bg-surface-pure p-6 shadow-card transition-shadow hover:shadow-lift md:p-space-xl">
+              <div>
+                <div class="mb-space-md flex flex-wrap items-center justify-between gap-3">
+                  <a href="https://marcato.shop/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_marcato" data-place="partners" aria-label="Marcato — интернет-магазин">
+                    <img src="/img/logo/marcato-black.png" width="394" height="240" alt="Marcato" loading="lazy" class="h-12 w-auto" />
+                  </a>
+                  <span class="whitespace-nowrap rounded bg-biscuit px-3 py-1 font-label-sm text-[11px] uppercase tracking-wider text-ruby">Италия · с 1930</span>
+                </div>
+                <h3 class="mb-space-sm font-headline-lg text-[26px] leading-tight text-ink-dark md:text-headline-lg">Вода, мука, Marcato.</h3>
+                <p class="mb-space-lg font-body-md text-body-md text-on-surface-variant">
+                  С 1930 года Marcato делает машинки для домашней пасты на своей фабрике в Камподарсего под Падуей. Сегодня там выпускают до 2&nbsp;500 машинок в день, а продают их в 90+ странах.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-3 border-t border-metallic-border/40 pt-space-md">
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Atlas · с 1965 года</span>
+                <a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-ruby transition-colors hover:text-ruby-dark" href="https://marcato.shop/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_marcato" data-place="partners">
+                  <span>Перейти в магазин Marcato</span><span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between rounded-2xl bg-surface-pure p-6 shadow-card transition-shadow hover:shadow-lift md:p-space-xl">
+              <div>
+                <div class="mb-space-md flex flex-wrap items-center justify-between gap-3">
+                  <a href="https://emilehenry.store/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_emilehenry" data-place="partners" aria-label="Emile Henry — интернет-магазин">
+                    <img src="/img/logo/emile-henry-black.png" width="443" height="240" alt="Emile Henry" loading="lazy" class="h-12 w-auto" />
+                  </a>
+                  <span class="whitespace-nowrap rounded bg-biscuit px-3 py-1 font-label-sm text-[11px] uppercase tracking-wider text-ruby">Франция · Бургундия</span>
+                </div>
+                <h3 class="mb-space-sm font-headline-lg text-[26px] leading-tight text-ink-dark md:text-headline-lg">Бургундская керамика с 1850 года</h3>
+                <p class="mb-space-lg font-body-md text-body-md text-on-surface-variant">
+                  Emile Henry делает посуду из бургундской глины с 1850 года: мануфактура в Марсиньи, шесть поколений семьи, всё производство — во Франции.
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-3 border-t border-metallic-border/40 pt-space-md">
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Сделано во Франции</span>
+                <a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-ruby transition-colors hover:text-ruby-dark" href="https://emilehenry.store/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_emilehenry" data-place="partners">
+                  <span>Перейти в магазин Emile Henry</span><span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- TODO: подставить юрлицо рекламодателя и erid до запуска -->
+          <p class="mt-space-lg text-center text-[12px] text-on-surface-variant">Реклама. Рекламодатель: [ЮРЛИЦО], erid: [ERID]</p>
+        </div>
+      </section>
+
+      <!-- ===== 7. FAQ ===== -->
+      <section class="w-full bg-canvas-cream py-space-2xl" id="faq">
+        <div class="wrap max-w-[956px]">
+          <div class="mx-auto mb-space-xl max-w-xl text-center">
+            <span class="eyebrow">Ответы на вопросы</span>
+            <h2 class="mt-1 font-headline-xl text-headline-xl-mobile text-ink-dark md:text-headline-xl">Частые вопросы</h2>
+            <p class="mt-2 font-body-sm text-body-sm text-on-surface-variant">Всё, что нужно знать об участии</p>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <details class="faq group rounded-xl bg-surface-pure shadow-sm" data-faq="who">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-space-md font-headline-sm text-[18px] text-ink-dark transition-colors hover:text-ruby">
+                <span>Кто может участвовать?</span><span class="material-symbols-outlined rot-open text-on-surface-variant transition-transform duration-300" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant"><p>Любой зарегистрированный пользователь Едим Дома: войдите на edimdoma.ru и добавьте рецепт с отметкой «Участвовать в конкурсе».</p></div>
+            </details>
+            <details class="faq group rounded-xl bg-surface-pure shadow-sm" data-faq="theme">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-space-md font-headline-sm text-[18px] text-ink-dark transition-colors hover:text-ruby">
+                <span>Какие рецепты принимаются?</span><span class="material-symbols-outlined rot-open text-on-surface-variant transition-transform duration-300" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant"><p>Тема свободная. Главное — рецепт авторский и раньше нигде не публиковался.</p></div>
+            </details>
+            <details class="faq group rounded-xl bg-surface-pure shadow-sm" data-faq="count">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-space-md font-headline-sm text-[18px] text-ink-dark transition-colors hover:text-ruby">
+                <span>Сколько рецептов можно добавить?</span><span class="material-symbols-outlined rot-open text-on-surface-variant transition-transform duration-300" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant"><p>Сколько угодно, ограничений нет.</p></div>
+            </details>
+            <details class="faq group rounded-xl bg-surface-pure shadow-sm" data-faq="photo">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-space-md font-headline-sm text-[18px] text-ink-dark transition-colors hover:text-ruby">
+                <span>Какими должны быть фотографии?</span><span class="material-symbols-outlined rot-open text-on-surface-variant transition-transform duration-300" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant"><p>Только ваши собственные. Фото из интернета использовать нельзя.</p></div>
+            </details>
+            <details class="faq group rounded-xl bg-surface-pure shadow-sm" data-faq="winners">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-space-md font-headline-sm text-[18px] text-ink-dark transition-colors hover:text-ruby">
+                <span>Как определяются победители?</span><span class="material-symbols-outlined rot-open text-on-surface-variant transition-transform duration-300" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant"><p>Жюри нет. Побеждают три рецепта с наибольшим числом лайков на 25 декабря, 23:59 МСК. Итоги объявим 26 декабря.</p></div>
+            </details>
+            <details class="faq group rounded-xl bg-surface-pure shadow-sm" data-faq="dates">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-space-md font-headline-sm text-[18px] text-ink-dark transition-colors hover:text-ruby">
+                <span>До какого числа принимаются рецепты?</span><span class="material-symbols-outlined rot-open text-on-surface-variant transition-transform duration-300" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="px-space-md pb-space-md font-body-sm text-body-sm text-on-surface-variant"><p>С 25 ноября до 25 декабря, 23:59 по Москве.</p></div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. ФИНАЛЬНЫЙ CTA ===== -->
+      <section class="w-full bg-canvas-cream pb-space-2xl" id="join">
+        <div class="wrap">
+          <div class="relative overflow-hidden rounded-3xl p-8 text-white shadow-2xl md:p-space-xl lg:p-space-2xl" style="background: linear-gradient(135deg, #b81d24 0%, #8c1319 50%, #1d1b16 100%)">
+            <div class="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-brand-accent-amber/15 blur-3xl" aria-hidden="true"></div>
+            <div class="relative z-10 mx-auto flex max-w-2xl flex-col items-center text-center">
+              <div class="mb-space-md inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-white/15 px-4 py-1.5 font-label-sm text-label-sm uppercase tracking-wider">
+                <span class="material-symbols-outlined text-[16px]" aria-hidden="true">calendar_today</span> Приём до 25 декабря
+              </div>
+              <h2 class="mb-space-sm font-display-hero text-headline-xl-mobile md:text-display-hero">Раскатаем вместе?</h2>
+              <p class="mb-space-lg max-w-xl font-body-xl text-body-xl text-white/90">Делитесь своими рецептами, собирайте лайки и выигрывайте машинки для пасты Marcato и форму Emile Henry.</p>
+              <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full bg-white px-10 py-4 font-label-md text-[17px] text-ruby shadow-xl transition-all hover:bg-surface-warm active:scale-95" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="final">
+                <span class="material-symbols-outlined text-[22px]" aria-hidden="true">post_add</span><span>Добавить рецепт</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="w-full bg-surface-warm pb-space-xl pt-space-2xl text-ink-dark">
+      <div class="wrap">
+        <div class="grid grid-cols-1 gap-space-xl border-b border-metallic-border/50 pb-space-xl md:grid-cols-12 md:gap-gutter">
+          <div class="flex flex-col gap-space-md md:col-span-5">
+            <a href="https://www.edimdoma.ru" target="_blank" rel="noopener" aria-label="Едим Дома — edimdoma.ru"><img src="/img/logo/edimdoma.png" width="512" height="170" alt="Едим Дома" loading="lazy" class="h-9 w-auto" /></a>
+            <p class="max-w-sm font-body-sm text-body-sm text-on-surface-variant">Конкурс рецептов «Раскатаем!» на Едим Дома при поддержке Marcato (Италия) и Emile Henry (Франция).</p>
+            <div class="flex items-center gap-6">
+              <a href="https://marcato.shop/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_marcato" data-place="footer" aria-label="Marcato — интернет-магазин"><img src="/img/logo/marcato-black.png" width="394" height="240" alt="Marcato" loading="lazy" class="h-9 w-auto" /></a>
+              <a href="https://emilehenry.store/?utm_source=site_jv&amp;utm_medium=cpc&amp;utm_campaign=concurs&amp;utm_content=edimdoma" target="_blank" rel="noopener sponsored" data-goal="click_shop_emilehenry" data-place="footer" aria-label="Emile Henry — интернет-магазин"><img src="/img/logo/emile-henry-black.png" width="443" height="240" alt="Emile Henry" loading="lazy" class="h-10 w-auto" /></a>
+            </div>
+          </div>
+          <nav class="flex flex-col gap-space-sm md:col-span-3" aria-label="Навигация в подвале">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-ruby">Конкурс</span>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-ruby" href="#prizes">Призы</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-ruby" href="#how">Как участвовать</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-ruby" href="#rules">Условия участия</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-ruby" href="#faq">Вопросы и ответы</a>
+          </nav>
+          <div class="flex flex-col items-start gap-space-sm md:col-span-4">
+            <span class="font-label-md text-label-md uppercase tracking-wider text-ruby">Участвовать</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Приём рецептов до 25 декабря, 23:59 МСК. Итоги — 26 декабря.</p>
+            <a class="btn-primary mt-1 px-6 py-3" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="footer">Добавить рецепт</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-space-sm pt-space-lg font-body-sm text-[13px] text-on-surface-variant md:flex-row md:items-center md:justify-between">
+          <p>© 2026 «Едим Дома»</p>
+          <!-- TODO: подставить юрлицо рекламодателя и erid до запуска -->
+          <p>Реклама. Рекламодатель: [ЮРЛИЦО], erid: [ERID]</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== STICKY BAR ===== -->
+    <aside class="fixed inset-x-0 bottom-0 z-40 border-t border-metallic-border/50 bg-canvas-cream/95 shadow-[0_-4px_20px_rgba(29,27,22,0.08)] backdrop-blur-xl" aria-label="Участие в конкурсе">
+      <div class="wrap flex h-16 items-center justify-between gap-3">
+        <div class="flex min-w-0 items-center gap-3">
+          <span class="relative flex h-2.5 w-2.5 shrink-0" aria-hidden="true"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-ruby opacity-60"></span><span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-ruby"></span></span>
+          <p class="truncate font-body-sm text-[14px] text-ink-dark">
+            <span class="hidden font-headline-sm text-[15px] md:inline">Конкурс «Раскатаем!» · </span><span class="font-semibold md:font-normal">До 25 декабря</span><span class="hidden text-on-surface-variant md:inline">, 23:59 МСК</span>
+          </p>
+        </div>
+        <a class="btn-primary shrink-0 px-5 py-2.5" href="https://www.edimdoma.ru/create/retsept" target="_blank" rel="noopener" data-goal="click_participate" data-place="sticky">
+          <span class="material-symbols-outlined text-[18px]" aria-hidden="true">add_circle</span><span class="md:hidden">Участвовать</span><span class="hidden md:inline">Добавить рецепт</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ===== ЛАЙТБОКС ===== -->
+    <div id="lightbox" class="lb fixed inset-0 z-[60] flex-col bg-[#14120e]/95" role="dialog" aria-modal="true" aria-label="Фотогалерея приза" hidden>
+      <div class="flex items-center justify-between gap-4 px-4 py-3 text-white md:px-8">
+        <div class="flex min-w-0 items-center gap-3">
+          <span class="lb-title truncate font-label-md text-sm"></span>
+          <span class="lb-count shrink-0 whitespace-nowrap text-xs text-white/70"></span>
+        </div>
+        <button type="button" class="lb-close flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20" aria-label="Закрыть">
+          <span class="material-symbols-outlined text-[26px]" aria-hidden="true">close</span>
+        </button>
+      </div>
+      <div class="lb-stage relative min-h-0 flex-1 overflow-hidden">
+        <div class="lb-track"></div>
+        <button type="button" class="lb-prev absolute left-2 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 text-white transition-all hover:bg-white/30 active:scale-95 md:left-6" aria-label="Предыдущее фото"><span class="material-symbols-outlined text-[28px]" aria-hidden="true">chevron_left</span></button>
+        <button type="button" class="lb-next absolute right-2 top-1/2 z-10 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/15 text-white transition-all hover:bg-white/30 active:scale-95 md:right-6" aria-label="Следующее фото"><span class="material-symbols-outlined text-[28px]" aria-hidden="true">chevron_right</span></button>
+      </div>
+      <p class="lb-caption px-4 py-3 text-center text-sm text-white/80"></p>
+    </div>
+  </body>
+</html>
