@@ -95,7 +95,7 @@ function gallery(id, { name, photos }) {
     .join('');
   const dots = photos.map((_, i) => `<span class="g-dot h-1.5 w-1.5 rounded-full bg-white/50 transition-all" aria-current="${i === 0}"></span>`).join('');
 
-  return `<div class="gallery flex min-w-0 flex-col gap-3" data-gallery="${id}" data-title="${esc(name)}">
+  return `<div class="gallery flex min-w-0 flex-col gap-3" data-gallery="${id}" data-prize="${id.slice(-1)}" data-title="${esc(name)}">
 <div class="g-pills -mx-1 flex gap-2 overflow-x-auto px-1 pb-1" role="group" aria-label="Ракурсы">${pills}</div>
 <div class="g-frame relative aspect-square overflow-hidden rounded-[20px] border border-metallic-border/30 bg-surface-pure shadow-md" role="region" aria-roledescription="карусель" aria-label="Фото: ${esc(name)}" tabindex="0">
 <div class="g-track">${slides}</div>

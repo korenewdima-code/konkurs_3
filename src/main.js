@@ -1,23 +1,5 @@
 import './style.css';
-
-const COUNTER_ID = 759060;
-
-/* ---------- Яндекс.Метрика: цели ---------- */
-function goal(name, params) {
-  try {
-    if (typeof window.ym === 'function') window.ym(COUNTER_ID, 'reachGoal', name, params || {});
-  } catch (e) {
-    /* метрика не должна ломать страницу */
-  }
-}
-
-document.addEventListener('click', (e) => {
-  const el = e.target.closest('[data-goal]');
-  if (!el) return;
-  const params = {};
-  if (el.dataset.place) params.place = el.dataset.place;
-  goal(el.dataset.goal, params);
-});
+import { trackGalleryOpen } from './goals.js';
 
 /* ---------- Мобильное меню ---------- */
 const menuBtn = document.querySelector('.mnav-btn');
@@ -36,13 +18,6 @@ if (menuBtn && menu) {
     if (window.innerWidth >= 1024) setMenu(false);
   });
 }
-
-/* ---------- FAQ: цель при раскрытии ---------- */
-document.querySelectorAll('details.faq').forEach((d) => {
-  d.addEventListener('toggle', () => {
-    if (d.open) goal('faq_open', { question: d.dataset.faq });
-  });
-});
 
 /* ---------- Свайп (общий помощник) ---------- */
 function attachSwipe(area, track, { onPrev, onNext, getIndex }) {
@@ -155,6 +130,7 @@ document.querySelectorAll('.gallery').forEach((root) => {
   attachSwipe(frame, track, { onPrev: () => go(index - 1), onNext: () => go(index + 1), getIndex: () => index });
 
   const data = {
+    el: root,
     id: root.dataset.gallery,
     title: root.dataset.title,
     items: imgs.map((img, k) => ({
@@ -229,7 +205,7 @@ function openLightbox(data, start) {
   lbGo(start);
   requestAnimationFrame(() => { lbTrack.style.transition = ''; });
   lb.querySelector('.lb-close').focus();
-  goal('gallery_open', { prize: data.id });
+  trackGalleryOpen(data.el);
 }
 
 function closeLightbox() {
