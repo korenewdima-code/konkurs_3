@@ -36,7 +36,7 @@ const prizes = {
     ],
   },
   prize2: {
-    name: 'Лапшерезка Marcato Atlas 150, хром',
+    name: 'Лапшерезка Marcato Atlas 150, серая',
     photos: [
       ['p2-01-na-dereve', 'На дереве с мукой'],
       ['p2-02-v-dele', 'В деле'],
